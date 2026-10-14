@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/phanatic-runtime-api",
+    "crates/phanatic-core",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "UNLICENSED"
+repository = "https://github.com/adelos-corp/phanatic"
+authors = ["ADELOS Corp."]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"
